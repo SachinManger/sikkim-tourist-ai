@@ -1,0 +1,32 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+passscode/
+
+# Python and local runtimes
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+.codex-runtime/
+
+# Local logs and temporary files
+*.log
+*.tmp
+data/raw/*
+!data/raw/README.txt
+data/processed/*
+!data/processed/README.txt
+
+# Development backups and duplicate databases
+agent/back up files/
+agent/*_backup.py
+agent/*_before_fix.py
+agent/*_broken.py
+crawler/*_backup.py
+download/
+database/*backup*.db
+/sikkim_tourist_ai.db

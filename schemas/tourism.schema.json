@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sikkim Tourism Record",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "category",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "category": {
+      "type": "string"
+    },
+    "region": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "district": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "altitude": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "best_time": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "activities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nearby_places": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "how_to_reach": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "permit_required": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "safety_information": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "travel_tips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contact": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "website": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "price_range": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "duration": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "dynamic_information": {
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "pending_review",
+        "approved",
+        "rejected"
+      ]
+    }
+  }
+}
